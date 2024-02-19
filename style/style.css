@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;700&family=M+PLUS+Rounded+1c&family=Nunito&family=Overlock&display=swap');
+
+*{
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Overlock', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+html, body{
+    height:100%;
+}
+.header-menu a, .header-title a{
+    color:white;
+
+}
+
+.main-header{
+    background-color:rgb(13, 21, 17);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:20px 30px;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    height:90px;
+    top:0px;
+    z-index: 10000000000000000000000;
+}
+
+.menu{
+    display:flex;
+    gap:2rem;
+}
+
+.header-title{
+    font-size:2.3rem;
+}
+
+.header-title:hover{
+    color:rgb(92, 129, 92);
+}
+
+.header-menu:hover{
+    color:rgb(92, 129, 92);
+}
+
+.showcase{
+    width:100%;
+    height:600px;
+    margin-top:90px;
+    background-image:url('/images/images/showcase-bg.jpg');
+    background-position:center;
+    background-repeat:no-reapt;
+    background-size:cover;
+    display:grid;
+    text-align:center;
+    align-items: end;
+    padding:30px;
+}
+
+.showcase-text{
+    font-size:2rem;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.movie-list{
+    background-color:hsl(240, 35%, 7%);
+    padding:50px;
+    color:white;
+
+}
+
+.selection-name{
+    font-size:1.4rem;
+}
+
+.selection{
+    display:flex;
+    gap:2rem;
+}
+
+.get-name{
+    width:400px;
+    height:50px;
+    border:1px solid white;
+    outline:none;
+    border-radius:5px;
+    background:none;
+    padding:10px;
+    color:white;
+    font-size:1.2rem;
+}
+
+.search-button{
+    height:50px;
+    font-size:1.3rem;
+    background-color:gold;
+    padding:10px;
+    color:white;
+    border:none;
+    border-radius:5px;
+    margin-left:15px;
+}
+
+.search-section{
+    display:grid;
+    justify-content:center;
+    gap:1rem;   
+}
+
+.popular-movies-list{
+    margin-top:50px;
+}
+
+.popular-movies-list h1{
+    text-align:center;
+    font-size:2rem;
+    font-weight: 900;
+    letter-spacing:3px;
+}
+
+.showcase-list, .showcase-search{
+    list-style: none;
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 330px));
+    padding:10px 100px;
+    justify-content: center;
+    gap:2rem;
+}
+.wrapper-showcase{
+    width:100%;
+}
+.showcase-list li{
+    height: 600px;
+    border:6px solid hsl(240, 35%, 50%);
+
+}
+
+.flix-img img{
+    height: 500px;
+    width:100%;
+}
+
+#tv-shows-title{
+    margin-top:80px;
+}
+
+.movie-content{
+    height:100px;
+    display:grid;
+    align-content:center;
+}
+
+.main-footer{
+    background-color:hsl(240, 35%, 7%);
+    padding:10px;
+    display:flex;
+    justify-content: space-around;
+    font-size:1.5rem;
+    padding-bottom:20px;
+}
+
+.social-media i{
+    margin:0px 10px;
+}
+
+.details-container{
+    padding:50px 250px;
+    background-color:hsl(240, 35%, 7%);
+    margin-top:90px;
+    color:white;
+}
+
+.back-buttons{
+    background:none;
+    border:1px solid greenyellow;
+    padding:10px 20px;
+    font-size:1.2rem;
+    color:white;
+    border-radius: 4px;
+}
+
+.details{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin:30px 0;
+}
+
+.about{
+    font-size:1.4rem;
+}
+.title-description{
+    justify-self: start;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-image img{
+    width:400px;
+    height:500px;
+}
+
+.info{
+    margin:30px 0;
+}
+
+.info h1{
+    text-align:center;
+}
+
+.detail-info div{
+    border-bottom:1px solid rgb(200, 200, 200);
+    margin:20px 0;
+}
+
+.detail-info h3{
+    color:greenyellow;
+}
+
+.detail-info h3 span{
+    color:white;
+}
+
+.detail-footer{
+    padding:0px;
+    justify-content: space-between;
+}
+
+#tv-shows-title{
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width:500px){
+    .get-name{
+        width:200px;
+    }
+    .movie-list{
+        padding:20px;
+    }
+    .showcase-list{
+        padding:0px;
+    }
+
+    .details-container{
+        padding:20px 30px;
+    }
+    .title-image img{
+        width:80%;
+        height:400px;
+        margin-bottom:40px;
+    }
+    .title-description{
+        gap:2rem;
+        height:auto;
+    }
+}
+
+@media(max-width:1000px){
+    .details{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Section: Now Playing */
+
+section.now-playing {
+    padding: 60px;
+    background: url(../images/images/showcase-bg.jpg) no-repeat center center/cover;
+  }
+  
+  section h2 {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+
+  section.now-playing {
+    padding: 60px;
+    background: url(../images/images/showcase-bg.jpg) no-repeat center center/cover;
+  }
+  
+  section h2 {
+    margin: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+  }
+  
+/* Slider */
+.swiper {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background:none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+padding:0px;
+height: 600px;
+object-fit: cover;
+}
+
+.swiper-rating {
+position:absolute;
+bottom:10px;
+color:gold;
+}
+
+.search-showcase{
+    width:100%;
+    min-height:100%;
+    margin-top:90px;
+    background-color:hsl(240, 35%, 7%);
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.show{
+    background-color:red;
+    color:white;
+    width:250px;
+    text-align:center;
+    display:flex;
+    margin:auto;
+}
+
+.hide{
+    display:none;
+}
+
+.showcase-list a{
+    transition:400ms ease-in-out;
+}
+
+.showcase-list a:hover{
+    transform: translateY(-15px);
+}
+
+.results-heading{
+    text-align:center;
+    color:white;
+    margin:30px 0;
+}
+
+.switch-page{
+    display:grid;
+    place-items:center;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixx Movie App</title>
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/0f825555fb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="title">
+            <h1 class="header-title"><a href="index.html" class="nav-link">Flixx</a></h1>
+        </div>
+        <div class="menu">
+            <h2 class="header-menu"><a href="index.html" class="nav-link">Movies</a></h2>
+            <h2 class="header-menu"><a href="shows.html" class="nav-link">Tv Shows</a></h2>
+        </div>
+    </header>
+    <section class="search-showcase">
+        <div id="alert">
+
+        </div>
+
+        <form action="search.html" class="search-form search-of-form">
+            <input type="radio" name="type" id="search-of" value="movie" style="display:none" checked>
+            <input type="text" name="search" placeholder="Enter search term"  id="search-movie-name" class="get-name" >
+            <input type="submit" value="search"     class="search-button">
+        </form>
+        <div class="showcase-container wrapper wrapper-showcase">
+            <div class="wrapper wrapper-showcase">
+                <div class="results-heading"><h1></h1></div>
+                <!-- <h1 id="tv-shows-title">POPULAR TV SHOWS</h1> -->
+                <ul class="showcase-list showcase-shows showcase-search">
+                    
+                </ul>
+            </div>
+    
+            <div class="switch-page pagination">
+         
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="title">
+            <h1 class="header-title"><a href="index.html">Flixx</a></h1>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-bconsolerands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
