@@ -134,7 +134,6 @@ function init(){
         case '/':
         case '/index.html':
             console.log("Home");
-            fetchApiData('movie/popular');
             break;
         case '/show-details.html':
             console.log("Show Details");
